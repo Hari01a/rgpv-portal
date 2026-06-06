@@ -1,0 +1,174 @@
+/*Global Body */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e3e9f5, #f6f8fd);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/*Header*/
+.header {
+  background-color:darkblue;
+  color: white;
+  text-align: center;
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.25);
+}
+.logo {
+  height: 55px;
+  width: 55px;
+  border-radius: 5px;
+}
+
+/*Main Box Container*/
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  gap: 40px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/*Instruction & Form Box Style */
+.left-box, .right-box {
+  background: #ffffff;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.15);
+  border-radius: 12px;
+  padding: 25px;
+  border-top: 6px solid #0b2f63;
+}
+
+.left-box { width: 40%; }
+.right-box { width: 32%; }
+
+/*Headings*/
+.left-box h2, .right-box h2 {
+  background-color:darkblue;
+  color: gold;
+  padding: 12px 0;
+  font-size: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
+}
+
+/*Instructions*/
+.left-box ul {
+  margin-top: 10px;
+  line-height: 1.7rem;
+  font-size: 15px;
+  color: #222;
+}
+
+/*Form Inputs*/
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #0b2f63;
+}
+
+input {
+  width: 100%;
+  padding: 9px;
+  margin-top: 6px;
+  border: 1px solid #98a4b9;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.25s;
+}
+
+input:focus {
+  border-color: #0b2f63;
+  box-shadow: 0 0 6px rgba(11,47,99,0.25);
+}
+
+.note {
+  color: #cc0000;
+  font-size: 13px;
+  margin: 5px 0 10px;
+}
+/*FIXED SMALL PROFESSIONAL CAPTCHA  */
+.captcha-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eef2ff;
+  border: 2px solid #0b2f63;
+  padding: 6px 10px;
+  border-radius: 6px;
+  min-height: 38px;       
+  max-width: 170px;        
+  margin-bottom: 10px;
+}
+
+#captchaValue {
+  font-size: 20px;         
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #0b2f63;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+  transform: rotate(-2deg);
+  user-select: none;
+}
+
+.refresh-btn {
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #0b2f63;
+  transition: 0.2s;
+}
+
+.refresh-btn:hover {
+  transform: rotate(180deg);
+  color: #004c9a;
+}
+
+
+
+/* Login Button */
+.login-btn {
+  width: 100%;
+  background-color: #0b2f63;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 18px;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(11,47,99,0.3);
+}
+
+.login-btn:hover {
+  background-color: #0e3d82;
+  transform: translateY(-3px);
+}
+
+/*Footer*/
+footer {
+  background-color:darkblue;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-size: 14px;
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.25);
+}
+
+/*Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}

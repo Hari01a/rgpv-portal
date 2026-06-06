@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    background: #e3eaef;
+    font-family: Arial, sans-serif;
+}
+
+/* TOP BG */
+.top-bg {
+    background: #00c7d4;
+    height: 25px;
+}
+
+/* HEADER */
+.college-box {
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #00c7d4;
+}
+
+.logo {
+    width: 110px;
+    margin-right: 20px;
+}
+
+.txt h2 {
+    margin: 0;
+    color: #0073c9;
+}
+
+.txt p {
+    margin: 0;
+}
+
+/* WELCOME STRIP */
+.welcome-strip {
+    background: #fff;
+    padding: 10px;
+    border-bottom: 2px solid #b2bfc9;
+    font-size: 15px;
+}
+
+.welcome-strip .right {
+    float: right;
+}
+
+.red {
+    color: red;
+}
+
+/* BLACK MENU BAR */
+.menu-bar {
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* CONTENT */
+.content {
+    padding: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+.red-link {
+    color: red;
+    font-size: 16px;
+}
+
+.new {
+    background: yellow;
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* NOTICE BOX */
+.notice-box {
+    width: 60%;
+    margin: 30px auto;
+    background: #fff;
+    padding: 0;
+    border: 1px solid #c4c4c4;
+}
+
+.notice-box h3 {
+    background: #ffecec;
+    color: red;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.notice-box ul {
+    list-style: disc;
+    padding: 20px;
+}
+
+.notice-box li {
+    padding: 6px 0;
+}
+
+.newtag {
+    background: orange;
+    padding: 3px 7px;
+    color: white;
+    font-size: 11px;
+    border-radius: 4px;
+}
+
+/* FOOTER */
+.footer {
+    background: #00c7d4;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+.verify-link {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.verify-link:hover {
+    text-decoration: underline;
+}
+.student-profile{
+
+    width:90%;
+    margin:20px auto;
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.15);
+
+}
+
+.student-profile h3{
+
+    color:#003366;
+
+    margin-bottom:15px;
+
+}
+
+.student-profile p{
+
+    margin:8px 0;
+
+    font-size:16px;
+
+}

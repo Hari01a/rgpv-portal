@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Status | RGPV</title>
+  <link rel="stylesheet" href="student-status.css">
+  <script src="student page.js"></script>
+</head>
+
+<body>
+
+<header>
+
+    <!-- Logout Button – Right Bottom -->
+    <button class="logout-btn" onclick="logout()">Logout</button>
+
+    <img src="https://www.rgpv.ac.in/Images/logo.jpg" alt="RGPV Logo" class="logo">
+    <h1>RGPV Exam Payment Status</h1>
+
+</header>
+
+<div class="container">
+
+  <h2>Check Your Status</h2>
+
+  <label>Enter Enrollment Number:</label>
+  <input type="text" id="searchEnroll" placeholder="Enter Enrollment No.">
+
+  <button onclick="checkStatus()">Check Status</button>
+
+  <div id="result" class="result"></div>
+
+</div>
+
+<footer>
+  © Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal (M.P.)
+</footer>
+
+<script src="student-status.js"></script>
+</body>
+</html>

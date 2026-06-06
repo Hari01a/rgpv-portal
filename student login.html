@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students Login Page | RGPV</title>
+  <link rel="stylesheet" href="student login.css">
+</head>
+<body>
+<p style="text-align:center;">
+    New User?
+    <a href="student-register.html">
+        Register Here
+    </a>
+</p>
+  <!-- Header -->
+  <header class="header">
+    <img src="https://www.rgpv.ac.in/Images/logo.jpg" alt="RGPV Logo" class="logo">
+    <h1>Rajiv Gandhi Proudyogiki Vishwavidyalaya</h1>
+  </header>
+
+  <!-- Main Section -->
+  <div class="main-container">
+
+    <!-- Left Box -->
+    <div class="left-box">
+      <h2>Important Instructions</h2>
+      <ul>
+        <li>All passwords are encrypted and remain secure.</li>
+        <li>New users must register before login.</li>
+        <li>Use your valid Email-ID for verification.</li>
+        <li>You can reset only your own password.</li>
+        <li>Password reset link will be sent to registered Email-ID only.</li>
+      </ul>
+    </div>
+
+    <!-- Right Box -->
+    <div class="right-box">
+      <h2>Sign In to Your Account</h2>
+
+      <form id="loginForm">
+
+        <label>Username (Enrollment ID)</label>
+        <input type="text" id="username" placeholder="Enter Enrollment ID" required>
+
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter Password" required>
+        <p class="note">Password is case-sensitive</p>
+
+        <label>Enter Captcha</label>
+        <div class="captcha-box">
+          <span id="captchaValue"></span>
+          <button type="button" class="refresh-btn" onclick="generateCaptcha()">⟳</button>
+        </div>
+
+        <input type="text" id="captchaInput" placeholder="Type captcha here" required>
+
+        <!-- ✔ Missing Submit Button FIXED -->
+        <button type="submit" class="login-btn">Sign In</button>
+
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    © Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal (M.P.)
+  </footer>
+
+  <script src="student login.js"></script>
+</body>
+</html>

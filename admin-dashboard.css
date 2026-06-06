@@ -1,0 +1,219 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body{
+    margin:0;
+    padding:0;
+    background:#eef3ff;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:#004aad;
+    color:white;
+    padding:15px 25px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo{
+    height:60px;
+}
+
+header h1{
+    margin:0;
+    font-size:28px;
+}
+
+.logout-btn{
+    margin-left:auto;
+    background:red;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.logout-btn:hover{
+    background:darkred;
+}
+
+/* =========================
+   DASHBOARD CARDS
+========================= */
+
+.stats-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:25px;
+}
+
+.card{
+    flex:1;
+    min-width:220px;
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 3px 12px rgba(0,0,0,0.12);
+}
+
+.card h3{
+    margin:0;
+    font-size:35px;
+    color:#004aad;
+}
+
+.card p{
+    margin-top:10px;
+    color:#555;
+    font-weight:bold;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box{
+    margin:0 25px 20px;
+}
+
+.search-box input{
+    width:320px;
+    padding:12px;
+    border:2px solid #004aad;
+    border-radius:8px;
+    font-size:15px;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table-section{
+    margin:25px;
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 3px 12px rgba(0,0,0,0.1);
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#004aad;
+    color:white;
+}
+
+th,td{
+    border:1px solid #dbe2ff;
+    padding:12px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f7f9ff;
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.approved{
+    color:green;
+    font-weight:bold;
+}
+
+.pending{
+    color:orange;
+    font-weight:bold;
+}
+
+.rejected{
+    color:red;
+    font-weight:bold;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button{
+    border:none;
+    border-radius:6px;
+    padding:8px 12px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.approve-btn{
+    background:#28a745;
+    color:white;
+}
+
+.approve-btn:hover{
+    background:#218838;
+}
+
+.reject-btn{
+    background:#dc3545;
+    color:white;
+}
+
+.reject-btn:hover{
+    background:#c82333;
+}
+
+.view-btn{
+    background:#004aad;
+    color:white;
+}
+
+.view-btn:hover{
+    background:#00337a;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    margin-top:30px;
+    background:#004aad;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .stats-container{
+        flex-direction:column;
+    }
+
+    .search-box input{
+        width:100%;
+    }
+
+    header{
+        flex-wrap:wrap;
+    }
+
+}

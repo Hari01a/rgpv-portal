@@ -1,0 +1,215 @@
+/*GLOBAL */
+body {
+  margin: 0;
+  padding: 0;
+  background: #eef2ff;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+
+/* HEADER */
+header {
+  background: #002b80;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* RGPV LOGO */
+header h1::before {
+  content: "";
+  width: 45px;
+  height: 45px;
+  background-image: url('https://www.rgpv.ac.in/Images/logo.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+
+.header-btns button {
+  margin-left: 10px;
+  padding: 7px 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s;
+  border: none;
+}
+
+/* Dashboard */
+.dash-btn {
+  background: white;
+  color: #002b80;
+}
+.dash-btn:hover {
+  background: #e8edff;
+}
+
+/* Status */
+.status-btn {
+  background: white;
+  color: #002b80;
+}
+.status-btn:hover {
+  background: #e8edff;
+}
+
+/* Logout */
+.logout-btn {
+  background: #ff2f2f;
+  color: white;
+}
+.logout-btn:hover {
+  background: #cc0000;
+}
+
+
+
+/*MAIN FORM CARD */
+.container {
+  width: 92%;
+  max-width: 650px;
+  background: white;
+  padding: 35px;
+  border-radius: 16px;
+  margin: 35px auto;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.15);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #002b80;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+
+
+/*SECTION TITLE */
+.section-title {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: #003a99;
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+
+
+/*INPUTS / SELECT*/
+label {
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: block;
+  color: #00336e;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 13px;
+  font-size: 15px;
+  margin-bottom: 14px;
+  background: #f5f7ff;
+  border: 2px solid #cdd9ff;
+  border-radius: 10px;
+  transition: 0.25s ease;
+}
+
+input:focus,
+select:focus {
+  background: #ffffff;
+  border-color: #002b80;
+  box-shadow: 0 0 8px rgba(0, 43, 128, 0.3);
+  outline: none;
+}
+
+
+
+/*SUBMIT BUTTON */
+button[type="submit"] {
+  width: 100%;
+  margin-top: 12px;
+  padding: 15px;
+  background: #002b80;
+  border: none;
+  color: white;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 43, 128, 0.4);
+}
+
+button[type="submit"]:hover {
+  background: #001f63;
+  transform: translateY(-3px);
+}
+
+
+
+/*SLIP PREVIEW */
+#previewBox {
+  width: 60%;
+  height: 90px;
+  border: 2px solid #d5ddff;
+  background: #f6f8ff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#previewBox img {
+  height: 85px;
+  width: 65px;
+  object-fit: cover;
+  border-radius: 8px;
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  box-shadow: 0px 3px 12px rgba(0,0,0,0.25);
+}
+
+
+
+/*FOOTER*/
+footer {
+  background: #002b80;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+
+
+/*ANIMATION*/
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

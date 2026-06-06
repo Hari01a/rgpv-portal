@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | RGPV</title>
+
+  <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+
+<body>
+
+<header>
+
+    <img src="https://www.rgpv.ac.in/Images/logo.jpg"
+    alt="RGPV Logo"
+    class="logo">
+
+    <h1>Admin Dashboard - RGPV</h1>
+
+    <button
+    class="logout-btn"
+    onclick="logout()">
+    Logout
+    </button>
+
+</header>
+
+
+<!-- DASHBOARD STATS -->
+
+<div class="stats-container">
+
+    <div class="card">
+        <h3 id="totalStudents">0</h3>
+        <p>Total Requests</p>
+    </div>
+
+    <div class="card">
+        <h3 id="pendingStudents">0</h3>
+        <p>Pending</p>
+    </div>
+
+    <div class="card">
+        <h3 id="approvedStudents">0</h3>
+        <p>Approved</p>
+    </div>
+
+    <div class="card">
+        <h3 id="rejectedStudents">0</h3>
+        <p>Rejected</p>
+    </div>
+
+</div>
+
+
+<!-- SEARCH BOX -->
+
+<div class="search-box">
+
+    <input
+    type="text"
+    id="searchInput"
+    placeholder="Search by Enrollment Number">
+
+</div>
+
+
+<!-- TABLE -->
+
+<section class="table-section">
+
+    <table id="studentTable">
+
+        <thead>
+
+            <tr>
+
+                <th>Name</th>
+
+                <th>Enrollment</th>
+
+                <th>Branch</th>
+
+                <th>Semester</th>
+
+                <th>Email</th>
+
+                <th>Mobile</th>
+
+                <th>Transaction ID</th>
+
+                <th>Amount (₹)</th>
+
+                <th>Remarks</th>
+
+                <th>Slip</th>
+
+                <th>Status</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+
+<footer>
+
+    © Rajiv Gandhi Proudyogiki
+    Vishwavidyalaya,
+    Bhopal (M.P.)
+
+</footer>
+
+
+<script src="admin-dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+/*  GLOBAL */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #e3e9ff, #f7f9ff);
+}
+
+/*HEADER  */
+.header {
+  background:darkblue;
+  color: white;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+.logo {
+  width: 65px;
+}
+
+/* MAIN CONTAINER */
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* LOGIN BOX  */
+.login-box {
+  width: 350px;
+  padding: 30px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  border-top: 6px solid #003c96;
+  animation: fadeIn 0.6s ease;
+}
+
+h2 {
+  text-align: center;
+  color: #003c96;
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+/*  LABEL + INPUT  */
+label {
+  font-weight: 600;
+  color: #003068;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 18px;
+  border: 2px solid #cdd9ff;
+  border-radius: 8px;
+  background: #f6f8ff;
+  font-size: 15px;
+  transition: 0.25s;
+}
+
+input:focus {
+  border-color: #003c96;
+  box-shadow: 0 0 6px rgba(0,60,150,0.3);
+  outline: none;
+}
+
+/* NOTE */
+.note {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* CAPTCHA */
+.captcha-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eef2ff;
+  border: 2px solid #003c96;
+  padding: 6px 10px;
+  border-radius: 8px;
+  min-height: 40px;
+  margin-bottom: 10px;
+}
+
+#captchaValue {
+  font-size: 20px;
+  font-weight: bold;
+  color: #003c96;
+  letter-spacing: 3px;
+  transform: rotate(-2deg);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+}
+
+.refresh-btn {
+  background: none;
+  border: none;
+  color: #003c96;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.refresh-btn:hover {
+  transform: rotate(180deg);
+}
+
+/*LOGIN BUTTON  */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #003c96;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 12px;
+  transition: 0.3s;
+  box-shadow: 0 6px 18px rgba(0,60,150,0.25);
+}
+
+.login-btn:hover {
+  background: #002d73;
+  transform: translateY(-3px);
+}
+
+/*FOOTER*/
+footer {
+  margin-top: 50px;
+  background:darkblue;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+/*ONE-LINE CONTROL BAR (EVERYTHING INLINE) */
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+  padding: 12px 20px;
+  flex-wrap: wrap; 
+}
+
+/* Left and right controls merge */
+.left-controls,
+.right-controls {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* Search box same size */
+.search-wrapper {
+  width: 260px;
+  max-width: 260px;
+}
+
+/* Status Dropdown */
+#statusFilter {
+  min-width: 140px;
+}
+
+/* Today only checkbox */
+.today-label {
+  margin-right: 14px;
+}
+
+/* Show rows box */
+.page-size {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+/* Bulk Action Buttons Grouped */
+.bulk-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Bulk Buttons Style Matching Screenshot */
+.bulk-actions button {
+  padding: 10px 22px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  white-space: nowrap;
+  transition: 0.2s ease-in-out;
+  color: white;
+}
+
+/* Green ones */
+.bulk-green {
+  background: linear-gradient(135deg, #00cba9, #009b77);
+}
+.bulk-green:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+/* Purple ones */
+.bulk-purple {
+  background: linear-gradient(135deg, #8066ff, #5b42ff);
+}
+.bulk-purple:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
